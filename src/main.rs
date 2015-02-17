@@ -1,7 +1,7 @@
 
 use std::os;
 
-mod recursive;
+mod triangular_expansion;
 
 fn main() {
 
@@ -20,5 +20,5 @@ fn main() {
     };
 
 
-    println!("reverse collatz of {}: {}", i, recursive::calculate(i));
+    println!("reverse collatz of {}: {}", i, triangular_expansion::calculate(i));
 }
