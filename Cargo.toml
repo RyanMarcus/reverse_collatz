@@ -1,0 +1,9 @@
+[package]
+
+name = "reverse_collatz"
+version = "0.0.1"
+authors = ["Ryan Marcus <ryan@rmarcus.info>"]
+
+[[bin]]
+
+name = "reverse_collatz"
