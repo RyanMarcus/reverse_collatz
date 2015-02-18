@@ -1,7 +1,11 @@
+#![allow(unstable)]
+
 
 use std::os;
 
 mod triangular_expansion;
+mod recursive;
+mod iterative_search;
 
 fn main() {
 
@@ -20,5 +24,5 @@ fn main() {
     };
 
 
-    println!("reverse collatz of {}: {}", i, triangular_expansion::calculate(i));
+    println!("reverse collatz of {}: {}", i, iterative_search::calculate(i));
 }

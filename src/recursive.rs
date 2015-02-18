@@ -1,5 +1,4 @@
-use std::collections::HashMap;
-
+#[allow(dead_code)]
 
 pub fn calculate(steps: i64) -> i64 {
     return rcalculate(1, steps);
