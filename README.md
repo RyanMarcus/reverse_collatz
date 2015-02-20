@@ -8,6 +8,15 @@ And this cargo:
 
     cargo 0.0.1-pre-nightly (3f74d7e 2015-02-14) (built 2015-02-14)
 
+It has additionally been tested on this system:
+
+    $ uname -srvm 
+    Linux 3.17.3-1-ARCH #1 SMP PREEMPT Fri Nov 14 23:13:48 CET 2014 x86_64
+    $ rustc --version
+    rustc 1.0.0-dev
+    $ cargo --version
+    cargo 0.0.1-pre-nightly (918a415 2015-02-17) (built 2015-02-17)
+
 To compile an executable, do:
 
     cargo build --release
@@ -15,6 +24,16 @@ To compile an executable, do:
 To just run it, do:
 
     cargo run 6 # where 6 is the sequence length
+
+To run the tests, do:
+
+    cargo test
+
+The default method used is a simple iterative search that starts at 1. Inclded methods that are (and tested):
+
+  * A simple iterative search that starts at 1 (default)
+  * A recursive backtracking algorithm that searches the Collatz tree (`recursive.rs`)
+  * An iterative triangular expansion method that searches the Collatz tree (`triangular_expansion.rs`)
 
 
 
