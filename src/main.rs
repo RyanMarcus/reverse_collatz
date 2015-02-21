@@ -38,8 +38,8 @@ fn main() {
     let opt_i = input_i.parse::<i64>();
     
     let i = match opt_i {
-        Some(x) => x,
-        None => { println!("You must enter a number!"); return; }
+        Ok(x) => x,
+        Err(_) => { println!("You must enter a number!"); return; }
     };
 
 
