@@ -2,20 +2,11 @@
 
 Built with this Rust:
 
-    rustc 1.0.0-dev
+    rustc 1.0.0-nightly (522d09dfe 2015-02-19) (built 2015-02-20)
 
 And this cargo:
 
     cargo 0.0.1-pre-nightly (3f74d7e 2015-02-14) (built 2015-02-14)
-
-It has additionally been tested on this system:
-
-    $ uname -srvm 
-    Linux 3.17.3-1-ARCH #1 SMP PREEMPT Fri Nov 14 23:13:48 CET 2014 x86_64
-    $ rustc --version
-    rustc 1.0.0-dev
-    $ cargo --version
-    cargo 0.0.1-pre-nightly (918a415 2015-02-17) (built 2015-02-17)
 
 To compile an executable, do:
 
